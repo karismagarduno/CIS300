@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of Casa Victoria Hotel.">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Casa Victoria Hotel</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Gallery</h2>
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="Images/gallery.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/gallery3.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/gallery4.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/gallery5.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/amenaties1.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/amenaties2.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/amenaties3.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/amenaties4.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/amenaties 5.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/amenaties6.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/businesscard.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/hotel.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/hotel1.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/rockypoint.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/rooms.jpg" style="width:100%">
+                </div>
+                <div class="slides">
+                    <img src="Images/rooms1.jpg" style="width:100%">
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+            <section>
+                <!-- Hotel Description -->
+                <div class="hotel-description">
+                    <h3>Our beautiful hotel, Casa Victoria</h3>
+                    <p>
+                        Casa Victoria offers a picturesque view of Rocky Point, just steps away from the ocean. 
+                        The spacious grounds are perfect for a relaxing getaway.
+                    </p>
+                    <p>
+                        The lobby area is decorated with a modern yet cozy style, offering a welcoming atmosphere for all guests.
+                    </p>
+                    <p>
+                        Our rooftop terrace provides stunning views of the surrounding area and is an ideal spot for evening relaxation.
+                    </p>
+                </div>
+            
+                <!-- Guest Testimonials -->
+                <div class="guest-testimonials">
+                    <h3>Guest Testimonials</h3>
+                    <blockquote>
+                        "A home away from home! The staff was amazing, and the views from the patio were breathtaking."
+                        <footer>– Emily, Arizona</footer>
+                    </blockquote>
+                    <blockquote>
+                        "We had a fantastic family vacation, and the hotel exceeded our expectations. Highly recommend!"
+                        <footer>– John, California</footer>
+                    </blockquote>
+                </div>
+            </section>            
+        </main>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function plusSlides(n) {
+            slideIndex += n - 1;
+            showSlides();
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Casa Victoria Hotel</p>
+        <p><a href="mailto:info@casavictoria.com">info@casavictoria.com</a></p>
+    </footer>
+</body>
+</html>

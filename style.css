@@ -1,0 +1,223 @@
+/* General */
+body, h1, h2, h3, h4, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Body and Wrapper */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/* Hompage Banner */
+#bannerimage {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url("Images/hotel.jpg") no-repeat center center;
+    background-size: cover;
+  }
+/* Header */
+header {
+    background-color: #8468c2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation for all pages*/
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #8468c2;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+main h2 {
+    color: #8468c2;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #8468c2;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+#amenitiesimage {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background: url("Images/amenaties1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+/* Table on Amenities Page */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #8468c2;
+    color: white;
+}
+/* Buttons  on Gallery Page*/
+button, .prev, .next {
+    background-color: #8468c2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover, .prev:hover, .next:hover {
+    background-color: #5d499a;
+}
+/*Gallery Page*/
+.hotel-description, .guest-testimonials {
+    margin: 20px 0;
+}
+
+.hotel-description h3, .guest-testimonials h3 {
+    color: #8468c2;
+    font-size: 24px;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 15px 0;
+    padding-left: 15px;
+    border-left: 3px solid #8468c2;
+}
+
+blockquote footer {
+    font-size: 14px;
+    font-style: normal;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Slideshow on Gallery Page*/
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+/*Attractions Page*/
+#attractionsimage {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background: url("Images/gallery4.jpg") no-repeat center center;
+    background-size: cover;
+}
+/*Reservations Page*/
+#roomsimage {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    background: url("Images/rooms.jpg") no-repeat center center;
+    background-size: cover;
+}
+/*video {
+    float: left;
+    margin: em;
+}*/

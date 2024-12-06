@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reservations at Casa Victoria Hotel.">
+    <link rel="stylesheet" href="style.css">
+    <title>Reservations</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="index.html">Casa Victoria Hotel</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        <div id= "roomsimage"></div>
+        <main>
+            <h2>Reservations</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="checkin">Check-in Date:</label><br>
+                <input type="date" id="checkin" name="checkin" required><br><br>
+                
+                <label for="checkout">Check-out Date:</label><br>
+                <input type="date" id="checkout" name="checkout" required><br><br>
+                
+                <label for="rooms">Number of Rooms:</label><br>
+                <select id="rooms" name="rooms" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><br>
+                
+                <label for="requests">Special Requests:</label><br>
+                <textarea id="requests" name="requests" rows="4" cols="50"></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Casa Victoria Hotel</p>
+            <p><a href="mailto:info@casavictoria.com">info@casavictoria.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
